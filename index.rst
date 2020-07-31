@@ -44,11 +44,5 @@ Gemini Real-Time Documentation Submodule
    
    code/code-index
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Gemini HowTo's:
 
-   howtos/RTEMSInstall
-   howtos/EPICSInstall
-   howtos/ADEInstall
 
