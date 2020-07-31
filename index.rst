@@ -1,4 +1,4 @@
-Gemini Real-Time Controls Documentation
+Gemini Real-Time Documentation Submodule
 =========================================
 
 .. toctree::
