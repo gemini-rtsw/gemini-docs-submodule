@@ -1,0 +1,513 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Use RTD as the primary documentation service for real time documentation &mdash; Gemini Documentation 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home" alt="Documentation Home"> Gemini Documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Community Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://epics-controls.org">EPICS Website</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://docs.epics-controls.org">EPICS Documentation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Quick Start Guide:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../quick-start/quick-start.html">Quick Start Guide</a></li>
+</ul>
+<p class="caption"><span class="caption-text">PDFs:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../pdfs/pdfs-index.html">PDF Tests</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Wiki Docs:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../wiki/wiki-index.html">Wiki Tests</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Other Docs:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../other/other-index.html">Other Tests</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Code:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../code/code-index.html">Code Tests</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Gemini HowTo's:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../howtos/RTEMSInstall.html">Installing RTEMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../howtos/EPICSInstall.html">Installing EPICS Base on the ADE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../howtos/ADEInstall.html">Installing ADE Build Tools</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Gemini Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Use RTD as the primary documentation service for real time documentation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/docs/other/docx/RTD.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p>Read The Docs is a free and complete document hosting service.<a class="reference internal" href="../../../_images/image9.png"><img alt="image0" src="../../../_images/image9.png" style="width: 6.35938in; height: 5.62281in;" /></a></p>
+<p>Concept of Operations</p>
+<div class="section" id="use-rtd-as-the-primary-documentation-service-for-real-time-documentation">
+<h1>Use RTD as the primary documentation service for real time documentation<a class="headerlink" href="#use-rtd-as-the-primary-documentation-service-for-real-time-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="rtd-would-provide-the-following-benefits">
+<h2>RTD would provide the following benefits<a class="headerlink" href="#rtd-would-provide-the-following-benefits" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Host real time documentation on a public website</li>
+<li>Complete search facility for all hosted documentation</li>
+<li>Version control</li>
+<li>Format conversions</li>
+<li>Unified appearance</li>
+</ul>
+</div>
+<div class="section" id="potential-documents-that-could-be-hosted-on-rtd">
+<h2>Potential documents that could be hosted on RTD<a class="headerlink" href="#potential-documents-that-could-be-hosted-on-rtd" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>ADE Documentation</li>
+<li>ADE 2 Documentation</li>
+<li>Use Cases and requirements for ADE systems (Google docs)</li>
+<li>SW Development standards (DMT)</li>
+<li>CCB Functional Requirements</li>
+<li>Release notes</li>
+<li>VME boot/info/settings</li>
+<li>Instructions/How-Tos</li>
+</ul>
+</div>
+</div>
+<div class="section" id="steps-to-use-rtd-for-real-time-documentation">
+<h1>Steps to use RTD for real time documentation<a class="headerlink" href="#steps-to-use-rtd-for-real-time-documentation" title="Permalink to this headline">¶</a></h1>
+<ol class="arabic">
+<li><p class="first rubric" id="migrate-existing-real-time-documents-to-rtd">Migrate existing real time documents to RTD</p>
+<ol class="loweralpha simple">
+<li>Compile complete list of documents</li>
+<li>Convert documents</li>
+<li>Verify conversions</li>
+<li>Add to repos</li>
+<li>Publish to RTD</li>
+</ol>
+</li>
+<li><p class="first rubric" id="using-rtd-for-new-real-time-documents">Using RTD for new real time documents</p>
+<ol class="loweralpha simple">
+<li>Learn to write rst</li>
+<li>Write documentation</li>
+<li>Add to repos</li>
+<li>Publish to RTD</li>
+</ol>
+</li>
+</ol>
+<p>Gemini RTD Experiments</p>
+</div>
+<div class="section" id="read-the-docs-workflow">
+<h1>Read The Docs Workflow<a class="headerlink" href="#read-the-docs-workflow" title="Permalink to this headline">¶</a></h1>
+<p>Figure 1</p>
+</div>
+<div class="section" id="rtd-experiment-team">
+<span id="section-1"></span><h1>RTD Experiment Team<a class="headerlink" href="#rtd-experiment-team" title="Permalink to this headline">¶</a></h1>
+<p>5 engineers 40 hours</p>
+</div>
+<div class="section" id="conversion-examples">
+<h1>Conversion Examples<a class="headerlink" href="#conversion-examples" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="gemini-ade-conversion-from-pdf-to-rst-and-published-on-rtd">
+<h2>Gemini ADE conversion from PDF to rst and published on RTD<a class="headerlink" href="#gemini-ade-conversion-from-pdf-to-rst-and-published-on-rtd" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="../../../_images/image7.png"><img alt="image1" src="../../../_images/image7.png" style="width: 8.2777in; height: 4.04184in;" /></a></p>
+</div>
+<div class="section" id="gemini-record-reference-manual">
+<h2>Gemini Record Reference Manual<a class="headerlink" href="#gemini-record-reference-manual" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="../../../_images/image5.png"><img alt="image2" src="../../../_images/image5.png" style="width: 8.27604in; height: 6.35983in;" /></a></p>
+</div>
+</div>
+<div class="section" id="results">
+<h1>Results<a class="headerlink" href="#results" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="pdf">
+<h2>PDF<a class="headerlink" href="#pdf" title="Permalink to this headline">¶</a></h2>
+<p>Most PDF conversions are fine without any modifications and can be
+directly uploaded to RTD. However, many technical drawings and graphics
+in PDFs do not convert properly and would either need to be manually
+redrawn. Another option would be to link PDFs that do not convert
+properly.</p>
+</div>
+<div class="section" id="wikihtml">
+<h2>WikiHTML<a class="headerlink" href="#wikihtml" title="Permalink to this headline">¶</a></h2>
+<p>Wiki/HTML conversions generally work without issues. Some minor
+formatting issues did arise from the Wikis that required manual fixes.
+Tables of contents did not always convert properly.</p>
+</div>
+<div class="section" id="google-docs-and-word-documents">
+<h2>Google Docs and Word documents<a class="headerlink" href="#google-docs-and-word-documents" title="Permalink to this headline">¶</a></h2>
+<p>Google Docs and Word (docx) documents generally converted without any
+issues. Graphics and images occasionally need to be fixed.</p>
+</div>
+</div>
+<div class="section" id="feedback-from-engineers">
+<h1>Feedback from engineers<a class="headerlink" href="#feedback-from-engineers" title="Permalink to this headline">¶</a></h1>
+<p>Initial resistance to learning new system</p>
+<p>General positive feedback</p>
+<p>Comments to use RTD tools and hosting locally</p>
+<p>Using Read The Docs with existing Gemini Documents</p>
+</div>
+<div class="section" id="training">
+<h1>Training<a class="headerlink" href="#training" title="Permalink to this headline">¶</a></h1>
+<p>RTD uses rst markup language. Rst is relatively easy to use, however,
+rst is not intuitive. A short training for engineers using RTD would
+save time in the long run. A 1 to 2 hour introduction to rst and RTD
+would be a good start.</p>
+</div>
+<div class="section" id="searching">
+<h1>Searching<a class="headerlink" href="#searching" title="Permalink to this headline">¶</a></h1>
+<p>RTD provides a standardized hosting and search environment. Gemini will
+still have documentations located in different locations, however,</p>
+</div>
+<div class="section" id="collaboration">
+<h1>Collaboration<a class="headerlink" href="#collaboration" title="Permalink to this headline">¶</a></h1>
+<p>Collaboration on Google docs is hard to beat. docs is a better option
+for live documents.</p>
+</div>
+<div class="section" id="time-saving">
+<h1>Time Saving<a class="headerlink" href="#time-saving" title="Permalink to this headline">¶</a></h1>
+<p>Implementation Estimate</p>
+<p>Read The Docs work unit estimates</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+<col width="16%" />
+<col width="21%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Unit</th>
+<th class="head">Description</th>
+<th class="head">Time
+(hours)</th>
+<th class="head">Quantity</th>
+<th class="head">Estimate
+(hours)</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Cr
+eate/update
+repo</td>
+<td>Create a
+new Git or
+SVN repo to
+hold docs
+or add docs
+to an
+existing
+repo.</td>
+<td>0.1</td>
+<td>10</td>
+<td>1</td>
+</tr>
+<tr class="row-odd"><td>List/find
+all real
+time docs</td>
+<td>&#160;</td>
+<td>8</td>
+<td>1</td>
+<td>8</td>
+</tr>
+<tr class="row-even"><td>Convert pdf</td>
+<td>Convert PDF
+docs using
+pandoc and
+Word. Check
+docs for
+accurate
+and usable
+conversion.</td>
+<td>0.25</td>
+<td>100</td>
+<td>25</td>
+</tr>
+<tr class="row-odd"><td>Convert doc</td>
+<td>Convert
+Good Docs
+using
+pandoc.
+Check docs
+for
+accurate
+and usable
+conversion.</td>
+<td>0.1</td>
+<td>100</td>
+<td>10</td>
+</tr>
+<tr class="row-even"><td>Convert
+Wiki/HTML</td>
+<td>Convert
+Wiki/HTML
+docs using
+pandoc.
+Check docs
+for
+accurate
+and usable
+conversion.</td>
+<td>0.15</td>
+<td>100</td>
+<td>15</td>
+</tr>
+<tr class="row-odd"><td>Write
+documents</td>
+<td>Write new
+rst
+documents.</td>
+<td>0.01</td>
+<td>100</td>
+<td>1</td>
+</tr>
+<tr class="row-even"><td>Create
+automation
+scripts</td>
+<td>Create
+scripts to
+au
+tomatically
+convert
+large
+resources
+of
+documents.</td>
+<td>16</td>
+<td>1</td>
+<td>16</td>
+</tr>
+<tr class="row-odd"><td>Publish</td>
+<td>Push docs
+to RTD and
+check for
+finished
+build.</td>
+<td>0.01</td>
+<td>10</td>
+<td>0.1</td>
+</tr>
+<tr class="row-even"><td>Create
+Training
+Material</td>
+<td>Create
+i
+nstructions
+and how-tos
+for basic
+rst and RTD
+use cases</td>
+<td>16</td>
+<td>1</td>
+<td>16</td>
+</tr>
+<tr class="row-odd"><td>Misc.
+adm
+inistration</td>
+<td>Meetings,
+mail,
+or
+ganization,
+com
+munication,
+etc.</td>
+<td>8</td>
+<td>1</td>
+<td>8</td>
+</tr>
+<tr class="row-even"><td>Contingency</td>
+<td>&#160;</td>
+<td>20</td>
+<td>1</td>
+<td>20</td>
+</tr>
+<tr class="row-odd"><td>Imp
+lementation
+Estimate
+(hours)</td>
+<td>120.1</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p><a class="reference internal" href="../../../_images/image2.png"><img alt="image3" src="../../../_images/image2.png" style="width: 6.5in; height: 4.01389in;" /></a></p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Gemini Controls
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,951 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Introduction &mdash; Gemini Documentation 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Gemini Documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Community Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://epics-controls.org">EPICS Website</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://docs.epics-controls.org">EPICS Documentation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Quick Start Guide:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../quick-start/quick-start.html">Quick Start Guide</a></li>
+</ul>
+<p class="caption"><span class="caption-text">PDFs:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pdfs-index.html">PDF Tests</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Wiki Docs:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../wiki/wiki-index.html">Wiki Tests</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Other Docs:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../other/other-index.html">Other Tests</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Code:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../code/code-index.html">Code Tests</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Gemini HowTo's:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../howtos/RTEMSInstall.html">Installing RTEMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../howtos/EPICSInstall.html">Installing EPICS Base on the ADE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../howtos/ADEInstall.html">Installing ADE Build Tools</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Gemini Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Introduction</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/pdfs/SDS-docx.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p>Software Development Standards</p>
+<blockquote>
+<div>Version 1.0, September 26, 2018</div></blockquote>
+<p><a class="reference external" href="#introduction">1. Introduction 3</a></p>
+<p><a class="reference external" href="#overview">1.1. Overview 3</a></p>
+<p><a class="reference external" href="#acronyms">1.2. Acronyms 3</a></p>
+<p><a class="reference external" href="#references">1.3. References 4</a></p>
+<p><a class="reference external" href="#ade-concepts">2. ADE Concepts 4</a></p>
+<p><a class="reference external" href="#software-module-types">2.1. Software Module Types 4</a></p>
+<p><a class="reference external" href="#software-maturity-categories">2.2. Software Maturity Categories 4</a></p>
+<p><a class="reference external" href="#vendor-software">2.3. Vendor Software 5</a></p>
+<p><a class="reference external" href="#ioc-types">2.4. IOC Types 5</a></p>
+<p><a class="reference external" href="#software-dependencies">2.5. Software Dependencies 5</a></p>
+<p><a class="reference external" href="#redirector">2.6. Redirector 6</a></p>
+<p><a class="reference external" href="#naming-conventions">2.7. Naming Conventions 6</a></p>
+<p><a class="reference external" href="#version-numbers">2.7.1. Version Numbers 6</a></p>
+<p><a class="reference external" href="#ioc-modules">2.7.1.1. IOC Modules 7</a></p>
+<p><a class="reference external" href="#support-modules">2.7.1.2. Support Modules 7</a></p>
+<p><a class="reference external" href="#vendor-support-modules">2.7.1.2.1. Vendor Support Modules 7</a></p>
+<p><a class="reference external" href="#branches">2.7.1.3. Branches 7</a></p>
+<p><a class="reference external" href="#ioc-names">2.7.2. IOC Names 8</a></p>
+<p><a class="reference external" href="#support-module-names">2.7.3. Support Module Names 8</a></p>
+<p><a class="reference external" href="#redirector-links">2.7.4. Redirector Links 8</a></p>
+<p><a class="reference external" href="#ade-profile-and-environment-variables">2.8. ADE Profile and Environment Variables
+9</a></p>
+<p><a class="reference external" href="#ade-directory-structure">2.9. ADE Directory Structure 9</a></p>
+<p><a class="reference external" href="#working-area">2.9.1. Working Area 9</a></p>
+<p><a class="reference external" href="#repository">2.9.2. Repository 10</a></p>
+<p><a class="reference external" href="#release-notes">2.10. Release Notes 11</a></p>
+<p><a class="reference external" href="#software-development-using-the-ade">3. Software Development using the ADE
+12</a></p>
+<p><a class="reference external" href="#software-development-process">3.1. Software Development Process 12</a></p>
+<p><a class="reference external" href="#normal-development">3.2. Normal Development 14</a></p>
+<p><a class="reference external" href="#initial-development">3.2.1. Initial Development 14</a></p>
+<p><a class="reference external" href="#development-in-work">3.2.2. Development in Work 14</a></p>
+<p><a class="reference external" href="#release-to-production">3.2.3. Release to Production 15</a></p>
+<p><a class="reference external" href="#guidelines-for-releasing">3.2.3.1. Guidelines for releasing 15</a></p>
+<p><a class="reference external" href="#majormedium-redevelopment">3.3. Major/Medium Redevelopment 15</a></p>
+<p><a class="reference external" href="#bug-fix-to-released-code-no-longer-in-trunk">3.4. Bug Fix to Released Code (no longer in trunk)
+16</a></p>
+<p><a class="reference external" href="#vendor-software-1">3.5. Vendor Software 16</a></p>
+<p><a class="reference external" href="#keeping-track-of-versions">3.6. Keeping Track of Versions 16</a></p>
+<p><a class="reference external" href="#managing-external-software">4. Managing External Software 17</a></p>
+<p><a class="reference external" href="#proposal-for-managing-external-software">4.1. Proposal for Managing External Software
+17</a></p>
+<p><a class="reference external" href="#epics">4.2. EPICS 17</a></p>
+<p><a class="reference external" href="#base">4.2.1. Base 17</a></p>
+<p><a class="reference external" href="#epics-customizations">4.2.1.1. EPICS Customizations 18</a></p>
+<p><a class="reference external" href="#extensions">4.2.2. Extensions 18</a></p>
+<p><a class="reference external" href="#rtems">4.3. RTEMS 19</a></p>
+<p><a class="reference external" href="#ade-tools">4.4. ADE Tools 19</a></p>
+<p><a class="reference external" href="#tdct">4.5. TDCT 19</a></p>
+<p><a class="reference external" href="#procserv">4.6. procServ 19</a></p>
+<div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p>The following document is a compilation of all standards and rules that
+will guide any Real Time Software development process within the Gemini
+Software Group. The main focus of the document is the Application
+Development Environment (ADE), its components, its use cases and the
+usage standards. The document also covers concepts and standards about
+managing external software (e.g. EPICS, RTEMS, etc.). The goal is to
+have clear guidelines to follow when starting any type of development
+process, be it new projects or routine maintenance tasks.</p>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>The Application Development Environment to support the Gemini Real-Time
+System software development process consists of the following
+components:</p>
+<ul class="simple">
+<li>A comprehensive directory structure which is maintained in a file
+system accessible to all developers and operational systems. The
+directory structure defines locations which reflect the module type
+(ioc or support module) and maturity (work or production).</li>
+<li>A build server that’s in charge of compiling and installing new
+releases into the production area. The server always checks the
+software to build out from the repository. This ensures that what is
+built is reproducible from the repository.</li>
+<li>A source code control system, based on Subversion along with a set of
+Python scripts that work with Subversion to standardize the processes
+in the software development cycle. Only source code and static
+configuration files are stored in the ADE Subversion repository.</li>
+<li>A Build system based on GNU Make. The standard EPICS Build
+conventions are adopted, with enhancements including new Make rules,
+additional templates, macros, configuration files and consistency
+checking features.</li>
+</ul>
+</div>
+<div class="section" id="acronyms">
+<h2>Acronyms<a class="headerlink" href="#acronyms" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="14%" />
+<col width="86%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">ADE</th>
+<th class="head">Application Development Environment</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>EPICS</td>
+<td>Experimental Physics and Industrial Control System</td>
+</tr>
+<tr class="row-odd"><td>GUI</td>
+<td>Graphical User Interface</td>
+</tr>
+<tr class="row-even"><td>IOC</td>
+<td>EPICS Input/Output Controller</td>
+</tr>
+<tr class="row-odd"><td>Soft IOC</td>
+<td>Software EPICS Input/Output Controller</td>
+</tr>
+<tr class="row-even"><td>NFS</td>
+<td>Network File System</td>
+</tr>
+<tr class="row-odd"><td>SVN</td>
+<td>Subversion control system</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<p>[1] Gemini Application Development Environment User Manual</p>
+</div>
+</div>
+<div class="section" id="ade-concepts">
+<h1>ADE Concepts<a class="headerlink" href="#ade-concepts" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="software-module-types">
+<h2>Software Module Types<a class="headerlink" href="#software-module-types" title="Permalink to this headline">¶</a></h2>
+<p>The following two types of software module are supported by the ADE:</p>
+<ul class="simple">
+<li><strong>Support Module</strong>​: This is an EPICS software module which is
+intended to be used by another application or support module.
+​<strong>Typically it will consist of the software that implements a
+specific control system (e.g. the TCS or ECS), provides EPICS device
+or driver support software or provides a software library.</strong></li>
+<li><strong>IOC Application</strong>​: This comprises the set of files which will be
+loaded and run on a specific IOC, making use of software from one or
+more Support Modules.</li>
+</ul>
+</div>
+<div class="section" id="software-maturity-categories">
+<h2>Software Maturity Categories<a class="headerlink" href="#software-maturity-categories" title="Permalink to this headline">¶</a></h2>
+<p>The Gemini ADE categorizes software modules according to their
+“maturity”, which is a measure of their apparent stability and
+reliability. The ADE distinguishes three levels of software maturity:</p>
+<ul class="simple">
+<li><strong>Unreleased software</strong>​: This software is not handled as part of
+the development environment and does not have a location in the
+standard ADE directory structure. This is software in its initial
+development and test stage which is not yet available for use by
+other users. The development and test work will typically be
+performed in a developer’s home directory area. It is not required
+for unreleased software to be committed to the repository.</li>
+<li><strong>Work software</strong>​: This software is in a “ready for initial use
+with the real hardware” state but is considered to be under test and
+not ready for final release. It would typically be used during
+commissioning or engineering periods, but is not intended to be used
+during routine operations. It should be of a sufficient quality to
+allow it to be used in other IOC applications than the associated
+test application. The work software is installed in work by checking
+out from the trunk or a branch. Work software should have a minimum
+level of maturity such that: (a) it is defined in the ADE repository
+structure as a support module or ioc, and (b) it can build without
+errors after checking it out from the repository.</li>
+<li><strong>Production software (prod)</strong>​. This software is in a well-tested
+state, ready for routine operational use. It will normally have been
+previously located in the work area. The software is released and
+installed using the ADE tools and is protected with read-only access.
+Multiple versions of production release software modules can be
+maintained simultaneously. The software will have an associated
+version name, which corresponds to a tag in the repository, and a
+RELEASE.NOTES file describing the changes introduced in each version.
+Production software has the essential quality that it is committed to
+the repository as a tagged release, so it is traceable. This is
+enforced by the ADE tools.</li>
+</ul>
+</div>
+<div class="section" id="vendor-software">
+<h2>Vendor Software<a class="headerlink" href="#vendor-software" title="Permalink to this headline">¶</a></h2>
+<p>Vendor software is any software imported from outside Gemini like EPICS
+modules or any other software. The ADE provides scripts to manage vendor
+software within the ADE in a separate area of the Subversion repository.</p>
+</div>
+<div class="section" id="ioc-types">
+<h2>IOC Types<a class="headerlink" href="#ioc-types" title="Permalink to this headline">¶</a></h2>
+<p>The ADE is designed to build and install software for all types of EPICS
+IOCS, including RTEMS and VxWorks (hardware) IOCs as well as Soft Linux
+IOCs.</p>
+<p>A Soft IOC is an EPICS IOC running on a non-embedded Linux host. There
+can be more than one Soft IOC per Linux host. A soft IOC normally does
+not depend on any hardware on the host with the exception of standard
+communications interfaces such as Ethernet.</p>
+</div>
+<div class="section" id="software-dependencies">
+<h2>Software Dependencies<a class="headerlink" href="#software-dependencies" title="Permalink to this headline">¶</a></h2>
+<p>An IOC application or support module will usually depend on specific
+versions of one or more software support modules, either in production
+(prod) or work. It will always also depend on an specific version of
+EPICS.</p>
+<p>Modules in work can depend on modules in work or prod. The dependencies
+in prod should be preferred over the ones in work unless there’s a good
+reason not to. This will make easier to release the module to production
+later.</p>
+<p>Under no circumstances a released module in prod should depend on
+modules in work (or even worse, unreleased modules). If there’s the
+need, for instance in an IOC application, to use a new feature from a
+module in work, then the whole IOC should be moved to work for testing
+with the new feature(s) during the day. Once the tests are complete, the
+support module(s) and IOC can be released to prod following the
+guidelines in section 3.</p>
+<p>The file called ​<strong>RELEASE</strong>​ in the application’s
+​<strong>configure</strong>​ directory should be used to define module
+dependencies and each module respective locations (e.g. work, prod).
+Only dependencies that are actually being used should be listed in this
+file since this information is used to decide what modules to rebuild
+when a new version of a dependency becomes available.</p>
+<p>The potential exists for conflicting dependencies, for example where a
+module has a dependency on multiple modules, which may also have
+dependencies on a common module. In principle, only a single, specified
+version of a dependent module should be used everywhere when a module is
+built. Such conflicts are automatically detected and flagged at build
+time.</p>
+</div>
+<div class="section" id="redirector">
+<h2>Redirector<a class="headerlink" href="#redirector" title="Permalink to this headline">¶</a></h2>
+<p>The ADE has a mechanism (the “redirector”) to allow switching an IOC
+from one version to another without having to change the IOC boot
+parameters. This is done by creating a soft file link with a fixed name
+that points to the actual boot script file to be used by the IOC.</p>
+<p>The redirector links are kept in ​<em>/gem_sw/prod/redirector</em>​. The
+ADE provides a tool to switch an IOC from one version to another
+(​<strong>configure-ioc</strong>​). Under no circumstances the links should be
+changed by hand since this may introduce inconsistencies in the setup.</p>
+</div>
+<div class="section" id="naming-conventions">
+<h2>Naming Conventions<a class="headerlink" href="#naming-conventions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="version-numbers">
+<h3>Version Numbers<a class="headerlink" href="#version-numbers" title="Permalink to this headline">¶</a></h3>
+<p>When new software is released it needs a new version number. We’ll use
+an adaptation of the Semantic Versioning system that uses a sequence of
+three digits (Major, Minor, Patch).</p>
+<p>Major version numbers change whenever there is some significant change
+being introduced. Minor version numbers change when a minor feature or
+bug fix is introduced, or when a set of smaller features is rolled out.
+Patch numbers are optional and will be reserved for bug fixes of
+released code.</p>
+<p>The Major number should start from one. The Minor version number and the
+Patch number can start from zero.</p>
+<div class="section" id="ioc-modules">
+<h4>IOC Modules<a class="headerlink" href="#ioc-modules" title="Permalink to this headline">¶</a></h4>
+<p>The version number for an IOC should use the following naming
+convention: <strong>&lt;major&gt;-&lt;minor&gt;[-p&lt;patch&gt;]</strong></p>
+<p>Bug fixes applied to the trunk will increase the ​<strong>&lt;minor&gt;</strong>​
+number.</p>
+<p>The ​<strong>&lt;patch&gt;</strong>​ number will only be used when releasing a bug fix
+from a released version of the software that’s no longer in the trunk. A
+“<strong>p</strong>​ ” should be placed before the​ <em>&lt;patch&gt;</em>​ ​ number to
+separate it from the rest of the version number.</p>
+</div>
+<div class="section" id="support-modules">
+<h4>Support Modules<a class="headerlink" href="#support-modules" title="Permalink to this headline">¶</a></h4>
+<p>Support modules written within Gemini will follow the same naming
+convention as IOC modules.</p>
+<div class="section" id="vendor-support-modules">
+<h5>Vendor Support Modules<a class="headerlink" href="#vendor-support-modules" title="Permalink to this headline">¶</a></h5>
+<p>Vendor support modules that already had a version number assigned by the
+original author will use the following naming convention:</p>
+<blockquote>
+<div><strong>&lt;original-version&gt;-&lt;minor&gt;[-p&lt;patch&gt;]</strong></div></blockquote>
+<p>where ​<strong>&lt;original-version&gt;</strong>​ will be the version assigned by the
+original author.</p>
+<p>The ​<strong>&lt;minor&gt;</strong>​ number will be increased any time a modification
+is made after the module was incorporated to the ADE. It should be
+omitted if no modifications were needed to incorporate the package.</p>
+<p>No major number is used in vendor software since we don’t expect major
+modifications in this case. However, if this were necessary, then
+probably a new module should be created.</p>
+<p>The ​<strong>&lt;patch&gt;</strong>​ number will be used a bug fix from previously
+released version of the software (unlikely). A “<strong>p</strong>​ ” should be
+placed before the ​ <em>&lt;</em>​ <em>patch&gt;</em>​ number to separate it from the
+rest of the version number.</p>
+<p>A file called ​<strong>VERSION</strong>​ should be created in the module top
+directory to keep track of the original version, if the module does not
+include one.</p>
+</div>
+</div>
+<div class="section" id="branches">
+<h4>Branches<a class="headerlink" href="#branches" title="Permalink to this headline">¶</a></h4>
+<p>Branch names should be a string describing the purpose of the branch.
+The name should start with a letter to avoid confusing it with a version
+number.</p>
+<p>If a release is made from a branch, the name of the branch should be
+included in the released version as follows:</p>
+<blockquote>
+<div><strong>&lt;major&gt;-&lt;minor&gt;-&lt;branch&gt;-&lt;release&gt;-[-p&lt;patch&gt;]</strong></div></blockquote>
+<p>Where ​<strong>&lt;major&gt;</strong>​ and ​<strong>&lt;minor&gt;</strong>​ refer to the version the
+branch was derived from. Bug fixes applied to the branch will increase
+the ​<strong>&lt;release&gt;</strong>​ number.</p>
+<p>The <strong>&lt;</strong>​ <strong>patch&gt;</strong> number will only be used when releasing a bug
+fix from a released version of the​ software that’s no longer in the
+branch “trunk”. A “​<strong>p</strong>​” should be placed before the ​<em>&lt;patch&gt;</em>
+number to separate it from the rest of the version number.</p>
+<p><strong>Note</strong>​: Please note that the preferred method is to first merge the
+branch into the trunk and use the normal convention for version numbers.</p>
+</div>
+</div>
+<div class="section" id="ioc-names">
+<h3>IOC Names<a class="headerlink" href="#ioc-names" title="Permalink to this headline">¶</a></h3>
+<p>The operation of the ADE depends on a consistent naming scheme being
+adopted for all operational IOCs. The host name of the IOC must be set
+correctly to enable it to automatically locate and access the scripts
+and application software for use with the IOC. Gemini IOCs have names of
+the form:</p>
+<blockquote>
+<div><strong>&lt;system&gt;-&lt;location&gt;-ioc</strong></div></blockquote>
+<p>where ​<strong>&lt;system&gt;</strong>​ is a lowercase string uniquely identifying the
+IOC associated with a specific telescope subsystem.</p>
+<p>The ​<strong>&lt;location&gt;</strong>​ is the physical location of the IOC, and can
+either <strong>cp</strong>​ (Pachon), ​ <strong>mk</strong>​ (Mauna​ Kea), ​<strong>hbf</strong>​ (Hilo
+Base Lab) or ​<strong>sbf</strong> (La Serena Lab). For instance, the IOC
+controlling the mount at​ Mauna Kea will be ​<strong>mcs-mk-ioc</strong>​.</p>
+</div>
+<div class="section" id="support-module-names">
+<h3>Support Module Names<a class="headerlink" href="#support-module-names" title="Permalink to this headline">¶</a></h3>
+<p>The names of new Gemini support modules should have words capitalized
+and should start with a lowercase letter (e.g. mySupportModule). Those
+that come from the community will retain their original names. Old
+Gemini support modules (e.g. timelib) do not need to be renamed to
+adhere to the standard.</p>
+</div>
+<div class="section" id="redirector-links">
+<h3>Redirector Links<a class="headerlink" href="#redirector-links" title="Permalink to this headline">¶</a></h3>
+<p>For production systems (e.g. the MCS) the redirector link should follow
+the same convention as for the IOC names.</p>
+<p>For lab systems the redirector link should use the following convention:</p>
+<blockquote>
+<div><strong>&lt;host name&gt;-&lt;location&gt;-ioc</strong></div></blockquote>
+<p>Where, ​<strong>&lt;host name&gt;</strong>​ is the name of the CPU board hostname (e.g.
+labvme1, sim1, etc). The motivation for this is to keep the redirector
+directory as clean as possible. Besides, it doesn’t make sense to have
+more links than actual CPU boards available.</p>
+<p>In those cases where a permanently test system is needed (e.g. the TCS
+simulator) an “alias” entry in the redirector may be created (e.g.
+​<em>tcsim-sbf-io</em>​c). However, the preferred method would be to assign
+a hostname (and IP address) for this purpose and use that instead.</p>
+<p>Systems not following these naming conventions will create clutter in
+the system. They will be removed. A review of these will happen at least
+once per year. It is everyone responsibility to maintain the redirector
+directory clean.</p>
+</div>
+</div>
+<div class="section" id="ade-profile-and-environment-variables">
+<h2>ADE Profile and Environment Variables<a class="headerlink" href="#ade-profile-and-environment-variables" title="Permalink to this headline">¶</a></h2>
+<p>The file ​<em>/gem_sw/etc/profile</em>​ contains the Gemini ADE environment
+definitions. This file must be sourced (usually from the ~/.bashrc file)
+by anyone using the Gemini ADE. The ADE User Manual [1] has the details
+of the environment variables needed by the ADE.</p>
+</div>
+<div class="section" id="ade-directory-structure">
+<h2>ADE Directory Structure<a class="headerlink" href="#ade-directory-structure" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="working-area">
+<h3>Working Area<a class="headerlink" href="#working-area" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>/gem_sw</strong></li>
+</ul>
+<p><strong>○ /epics</strong></p>
+<p>■ <strong>/etc</strong>​ ​<em>[global configuration scripts]</em></p>
+<p>■ <strong>/R3.14.12.7</strong>​ ​<em>[each EPICS version has its own base and
+extensions]</em></p>
+<ul class="simple">
+<li><strong>/base</strong></li>
+<li><strong>/extensions</strong></li>
+</ul>
+<p><em>■ …same for other EPICS releases</em></p>
+<p><strong>○ /targetOS</strong></p>
+<p><strong>■ /RTEMS</strong></p>
+<p><strong>■ /vxworks</strong></p>
+<p><strong>○ /prod</strong></p>
+<p><strong>■ /R3.14.12.7</strong></p>
+<ul class="simple">
+<li><strong>/ioc</strong> ​<em>[IOC applications]</em></li>
+<li><strong>/support</strong> <em>[</em>​ <em>support modules]</em></li>
+</ul>
+<p><em>■ …IOC’s and support modules for other EPICS releases</em></p>
+<p><strong>■ /etc</strong>​<em>[files used by the build and release system]</em></p>
+<ul class="simple">
+<li><strong>/scripts</strong></li>
+<li><strong>/build ■ /common</strong></li>
+<li><strong>/python</strong>​ ​<em>[python scripts and tools; tools used by the build
+system]</em></li>
+</ul>
+<p>■ <strong>/redirector</strong>​ ​<em>[links used to define where IOC’s boot from]</em></p>
+<p>○ <strong>/work</strong>​ ​<em>[same structure as /prod, but contents are not
+tagged]</em></p>
+<p><strong>○ /test</strong>​ ​<em>[used to install &amp; run software developed in the
+user’s home directory]</em></p>
+<p>■ pgigoux</p>
+<p>■ mrippa</p>
+<p>■ …etc</p>
+<p>○ <strong>/etc</strong>​ ​<em>[login profiles and TDCT startup scripts]</em></p>
+</div>
+<div class="section" id="repository">
+<h3>Repository<a class="headerlink" href="#repository" title="Permalink to this headline">¶</a></h3>
+<p><strong>● Parent directory</strong></p>
+<p>○ <strong>branches</strong>​<sup>/</sup> ​<em>[branches are stored here]</em></p>
+<p><strong>■ ioc</strong></p>
+<p><strong>■ Support</strong></p>
+<p>○ <strong>release</strong>​<sup>/</sup> ​<em>[tagged versions are stored here]</em></p>
+<p><strong>■ ioc</strong></p>
+<p><strong>■ Support</strong></p>
+<p>○ <strong>trunk</strong>​<sup>/</sup> ​<em>[da trunk]</em></p>
+<p><strong>■ ioc</strong></p>
+<p><strong>■ Support</strong></p>
+<p>○ <strong>vendor</strong>​<sup>/</sup> ​<em>[imported vendor software are stored
+here]</em></p>
+<p><strong>■ ioc</strong>​ ​<em>[we don’t have any vendor ioc’s yet, but this is where
+they would be stored]</em></p>
+<p><strong>■ support</strong></p>
+</div>
+</div>
+<div class="section" id="release-notes">
+<h2>Release Notes<a class="headerlink" href="#release-notes" title="Permalink to this headline">¶</a></h2>
+<p>A new entry should be created in the RELEASE.NOTES file every time a new
+version is released. Each entry should start with a title detailing the
+product (IOC or Support Module) and version number. For each version,
+the file should detail (1) any additions, (2) any improvements and/or
+bug fixes, and (3) any compatibility issues with older versions.</p>
+<p>A default template will be created in the IOC or support module top
+directory when a new module is created using the ADE tools.</p>
+</div>
+</div>
+<div class="section" id="software-development-using-the-ade">
+<h1>Software Development using the ADE<a class="headerlink" href="#software-development-using-the-ade" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="software-development-process">
+<h2>Software Development Process<a class="headerlink" href="#software-development-process" title="Permalink to this headline">¶</a></h2>
+<p>The development process for a software module which in the ADE is
+summarized in the figure below. With a few exceptions, all interactions
+with the repository are performed using the ADE Python scripts.</p>
+<p><a class="reference internal" href="../_images/image1.png"><img alt="image0" src="../_images/image1.png" style="width: 5.25333in; height: 7.26333in;" /></a></p>
+</div>
+<div class="section" id="normal-development">
+<h2>Normal Development<a class="headerlink" href="#normal-development" title="Permalink to this headline">¶</a></h2>
+<p>This is the steady development of a support module or IOC application
+using a linear development/release schedule. The code is available or
+will be committed to the trunk.</p>
+<div class="section" id="initial-development">
+<h3>Initial Development<a class="headerlink" href="#initial-development" title="Permalink to this headline">¶</a></h3>
+<p>For the case where we are creating a completely ​<strong>new</strong>​ support
+module or IOC application, development begins by running
+​<strong>gem-start-new-module.py</strong>​. The user has the option of creating
+an entry in the repository at this time.</p>
+<p>For the case where we are modifying an existing support module or IOC
+application (bug-fixes or adding new features), development begins by
+running ​<strong>gem-checkout-module.py</strong>​. This will check out the code
+from the trunk.</p>
+<p>The first stage of the development process will take place in a
+sub-directory of the developer’s home directory. Booting the IOC
+application will be done from the</p>
+<p><strong>/gem_sw/test/&lt;user&gt;</strong>​ area. The user will have to set the
+​<em>INSTALL_LOCATION</em>​ variable in <em>configure/CONFIG_SITE</em>​ to make
+the build system install the software in the test area.</p>
+<p>Note: It is not possible to boot an RTEMS IOC from the user’s home
+directory because the OS does not allow booting from directories that
+are NFS mounts (​<em>prod</em>​, ​<em>work,</em> ​and​ <em>test</em>​ are located on
+the summit, but the home directories at the base facility).</p>
+</div>
+<div class="section" id="development-in-work">
+<h3>Development in Work<a class="headerlink" href="#development-in-work" title="Permalink to this headline">¶</a></h3>
+<p>When the new version on trunk is ready it can be checked out into work
+for testing on an operational IOC. ​<strong>gem-checkout-module.py</strong>​ is
+run to check-out the support module or IOC application from the trunk
+into the work tree.</p>
+<p>Development in work should be restricted only to minor bug fixes found
+while testing the module. No changes in the dependencies in the
+​<em>configure/RELEASE</em>​ file should be made in a software installed in
+work to prevent breaking other modules that rely on this software.
+Commits to Subversion can be done at any time to provide traceability.</p>
+<p>Major reworks to the code should be done in the user’s home directory
+and tested as if it were initial development. It can then be redeployed
+in work again.</p>
+<p>For an IOC application, the script ​<strong>configure-ioc</strong>​ should be run
+to modify the IOC boot script location to set this particular IOC to
+boot from the work version. The ​<strong>configure-ioc</strong>​ script must be
+run again so that the production IOC boots from the prod tree once the
+testing is finished.</p>
+</div>
+<div class="section" id="release-to-production">
+<h3>Release to Production<a class="headerlink" href="#release-to-production" title="Permalink to this headline">¶</a></h3>
+<p>When the system is ready for release, ​<strong>gem-release.py</strong>​ is run to
+generate a release tag and export the application to the prod area. No
+dependencies to modules in work should be present in
+​<em>configure/RELEASE</em>​ at this point.</p>
+<p>By default, ​<strong>gem-release.py</strong>​ generates a release from the trunk.
+It is also possible to create a release from a branch, although, the
+preferred method is to merge the branch back into the trunk and then
+release from there.</p>
+<p><strong>gem-release.py</strong>​ will do a test build first, before scheduling the
+module to be checked out and built in prod by the build server. The next
+time the build cron job runs on the build server, it will notice a
+scheduled build, check the module out and build it. The new tagged
+version will be created in the repository at this point.</p>
+<p>A new release should always come with a short summary under the
+RELEASE.NOTES file.</p>
+<p>Releases should be named according to conventions defined in ​<em>Naming
+Conventions</em>​.</p>
+<div class="section" id="guidelines-for-releasing">
+<h4>Guidelines for releasing<a class="headerlink" href="#guidelines-for-releasing" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic simple">
+<li>Add a meaningful summary to the RELEASE.NOTES file</li>
+<li>Check that all dependencies come from PROD</li>
+<li>Only compile for the architecture you are going to install the system
+(CONFIG_SITE). During initial development, it is advisable to
+restrict the number of architectures to just one to reduce
+compilation time.</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="major-medium-redevelopment">
+<h2>Major/Medium Redevelopment<a class="headerlink" href="#major-medium-redevelopment" title="Permalink to this headline">¶</a></h2>
+<p>This occurs when a significant change is required to a support module or
+IOC application that’s expected to take a long time to implement. During
+this period of time, it’ll still be possible to modify the existing
+support module or IOC application (in trunk) as a result of user
+demands, including bug fixes.</p>
+<p>A feature branch is created to develop and test the application
+including the new feature. This process is basically the same as the
+​<em>Initial Development</em>​ phase described above. However in this case
+development begins by running ​<strong>gem-start-feature-branch.py</strong>​
+instead of <em>gemstart-new-module.py</em>​ or
+​<em>gem-checkout-module.py</em>​.</p>
+<p>Also ​<strong>gem-sync-from-trunk.py</strong>​ should be run periodically to keep
+the code up to date with what is in trunk.</p>
+<p>When complete the feature branch should be merged back into trunk using
+the ​<strong>svn merge</strong> command.</p>
+<p>Testing an releasing to production will be done in the same way as in
+the ​<em>Normal Development</em> process.</p>
+</div>
+<div class="section" id="bug-fix-to-released-code-no-longer-in-trunk">
+<h2>Bug Fix to Released Code (no longer in trunk)<a class="headerlink" href="#bug-fix-to-released-code-no-longer-in-trunk" title="Permalink to this headline">¶</a></h2>
+<p>This occurs when a support module or IOC application has been released
+to production (the prodarea), some time has elapsed and bugs have been
+found. We have to fix the bugs for this particular release, despite the
+fact that further development and later releases of this support module
+or IOC application have been made since the release.</p>
+<p>This situation is not intended to happen in normal circumstances and it
+should be avoided where possible. This process is basically the same as
+the Initial Development phase. However in this case development begins
+by running ​<strong>gem-start-bugfix-branch.py</strong>​ rather than
+gemstart-new-module.py or gem-checkout-module.py.</p>
+<p>Unlike the ​<em>Major Development</em>​ process, the script
+​<strong>gem-sync-from-trunk.py</strong>​ must <strong>not</strong>​ ​ to be used to sync
+from the trunk since we are working from a tagged version.</p>
+<p>When the software is ready to be released, ​<strong>gem-release.py</strong>​
+should be run using the ​<strong>–b</strong> (branch) option to specify the branch
+where the release will be made from. The version naming conventions for
+this case are described in the ​<em>Naming Convention</em>​ section.</p>
+</div>
+<div class="section" id="vendor-software-1">
+<span id="id1"></span><h2>Vendor Software<a class="headerlink" href="#vendor-software-1" title="Permalink to this headline">¶</a></h2>
+<p>Code for a new module that has already been supplied by an external
+vendor it should be imported using ​<strong>gem-vendor-import.py</strong>​. The
+script will first import it into the vendor area of the repository and
+then make a copy of the software to the trunk. Any further development
+and/or bug fixes should be made from the trunk as it were an internal
+module.</p>
+<p>A file called ​<strong>VERSION</strong>​ should be created in the module top
+directory to keep track of the original version, if the module does not
+include one.</p>
+</div>
+<div class="section" id="keeping-track-of-versions">
+<h2>Keeping Track of Versions<a class="headerlink" href="#keeping-track-of-versions" title="Permalink to this headline">¶</a></h2>
+<p>Every time a new support module and/or IOC the new versions should be
+recorded in the <em>Versions and Dependencies spreadshee</em>​t in Google
+Docs.</p>
+<p>The ​<strong>canonical version</strong>​ column keeps track of the latest
+“official” version of a support module. Ideally, all support modules and
+IOC’s should only depend on the canonical versions of other modules. In
+practice, and especially during periods of upgrading and/or testing,
+more than one version of a support module could be in use at the same
+time.</p>
+<p><strong>Note</strong>​: We’ll replace the spreadsheet with a more automated way of
+keeping track of versions in the future.</p>
+</div>
+</div>
+<div class="section" id="managing-external-software">
+<h1>Managing External Software<a class="headerlink" href="#managing-external-software" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="proposal-for-managing-external-software">
+<h2>Proposal for Managing External Software<a class="headerlink" href="#proposal-for-managing-external-software" title="Permalink to this headline">¶</a></h2>
+<p>Any software package that’s not released into
+​<strong>/gem_sw/prod/&lt;epics-version&gt;/</strong>​ can be managed as a vendor
+module within the ADE using the standard development workflow. With the
+following differences:</p>
+<ol class="arabic simple">
+<li>Tagged releases will be made using the Subversion copy command
+instead of using the <em>gem-release.py</em>​:</li>
+</ol>
+<blockquote>
+<div><strong>svn copy &lt;trunk&gt; /gem_sw/release/&lt;module&gt;/&lt;tag&gt;</strong></div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Releasing the software will be done by checking out the code from the
+tag into the place where the software is supposed to be installed.</li>
+</ol>
+<blockquote>
+<div><p><strong>cd &lt;installation directory&gt;</strong></p>
+<p><strong>svn checkout &lt;parent directory&gt;/release/&lt;module&gt;/&lt;tag&gt;</strong></p>
+</div></blockquote>
+<p>Version numbers will be assigned using the same conventions that were
+stated in the <em>Version</em>​ <em>Numbers</em>​ section. This approach has the
+following advantages and disadvantages:</p>
+<ul class="simple">
+<li><strong>Pros</strong>​: The software will be under revision control and will be
+handled in the ADE repository and (to some extent) within the ADE
+workflow.</li>
+<li><strong>Cons</strong>​: We’d need to manually checkout software and manage
+releases, bypassing the ADE. This could be solved if we extend the
+ADE tools to handle external software.</li>
+</ul>
+</div>
+<div class="section" id="epics">
+<h2>EPICS<a class="headerlink" href="#epics" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base">
+<h3>Base<a class="headerlink" href="#base" title="Permalink to this headline">¶</a></h3>
+<p>The EPICS community keeps the EPICS base in
+​<a class="reference external" href="https://github.com/epics-base">GitHub</a><a class="reference external" href="https://github.com/epics-base">​.</a>
+We keep a cloned version of this repository in
+​<a class="reference external" href="https://github.com/gemini-rtsw/epics-base">https://github.com/gemini-rtsw/epics-base​.</a>
+Any modifications and customizations to the EPICS can be tracked using
+​<strong>git</strong>​ and ​<em>GitHub</em>​.</p>
+<p>The software will be installed by checking it out from ​<em>GitHub</em>​
+(in ​<em>/gem_sw/epics/&lt;epics release&gt;</em>​) and compiling it in place.</p>
+<p>We’ll assign version numbers as if EPICS were a vendor package, i.e.
+we’ll retain the conventions used in the EPICS community, but we’ll use
+our naming conventions for upgrades and patches defined for ​<em>Vendor
+Support Modules</em>​.</p>
+<p>Ideally, only a single EPICS release would be in use with the Gemini ADE
+at one time. In reality, especially during periods of upgrading,
+multiple EPICS releases could be supported simultaneously.</p>
+<div class="section" id="epics-customizations">
+<h4>EPICS Customizations<a class="headerlink" href="#epics-customizations" title="Permalink to this headline">¶</a></h4>
+<p>When upgrading EPICS base, we have to add in our Gemini customizations
+​<em>base/configure</em>​, <em>base/bin</em>​, and <em>base/templates</em>​ ​
+directories.</p>
+<ul class="simple">
+<li><strong>base/configure</strong>​: We have to add ​<em>CONFIG.Gem</em>​,
+​<em>RULES.Gem</em>​ and ​<em>RULES_TOP.Gem</em>​, as well as making our
+modifications to ​<em>CONFIG_SITE</em>​ and ​<em>CONFIG_SITE_ENV.</em></li>
+<li><strong>base/configure/os</strong>​: Need to add the Gemini customized version
+of <em>CONFIG_SITE.Common.RTEMS.</em></li>
+<li><strong>base/bin/linux_x86_64</strong>​: Need to add in
+​<em>convertGemRelease.pl</em>​.</li>
+<li><strong>base/templates/makeBaseApp/top</strong>​: Need to add the customized
+Gemini template directories ​<em>gemIocApp</em>​, ​<em>gemIocBoot</em>​ and
+<em>gemSuppApp</em>​ ​.</li>
+<li><strong>base/templates/makeBaseApp/top/configure</strong>​: Need to add in the
+Gemini customized versions of <em>CONFIG</em>​ ​, <em>RULES</em>​ ​ and
+<em>RULES_TOP.</em>​</li>
+</ul>
+<p>The EPICS customizations should all be managed as vendor modules
+following the proposal for external modules.</p>
+</div>
+</div>
+<div class="section" id="extensions">
+<h3>Extensions<a class="headerlink" href="#extensions" title="Permalink to this headline">¶</a></h3>
+<p>Of all the extensions we use, only ​<strong>edm</strong>​, ​<strong>medm</strong>​ and
+​<strong>msi</strong>​ really need the EPICS build system to compile. According
+to the module notes, they are installed by uncompressing the code into
+the <em>extensions/src</em>​ directory.</p>
+<p>The other two modules: ​<strong>procServ</strong>​ and ​<strong>TDCT</strong>​, do not
+depend on EPICS at all and should be moved somewhere else.</p>
+<p>Regardless of where they are installed, they should all be managed as
+vendor modules following the proposal for external modules.</p>
+</div>
+</div>
+<div class="section" id="rtems">
+<h2>RTEMS<a class="headerlink" href="#rtems" title="Permalink to this headline">¶</a></h2>
+<p>RTEMS is available in GitHub, but for versions newer than the one we use
+right now. Thus, it should be managed using as a vendor module following
+the proposal for external modules.</p>
+</div>
+<div class="section" id="ade-tools">
+<h2>ADE Tools<a class="headerlink" href="#ade-tools" title="Permalink to this headline">¶</a></h2>
+<p>So far, the ADE Tools are not maintained in a repository. We cannot use
+Github for this purpose since the ADE is based on proprietary code.
+Thus, it should be managed using as a vendor module following the
+proposal for external modules.</p>
+</div>
+<div class="section" id="tdct">
+<h2>TDCT<a class="headerlink" href="#tdct" title="Permalink to this headline">¶</a></h2>
+<p>TDCT so far has been handled as an EPICS extension in binary (jar) form.
+It resides in <em>/gem_sw/epics/&lt;epics version&gt;/extensions/src/tdct</em>​,
+which is a symlink to ​<em>/gem_sw/epics/&lt;epics
+versions&gt;/extensions/src/tdct-&lt;version&gt;</em>​, where ​<em>&lt;version&gt;</em>​ is
+of the form ​<em>&lt;xx&gt;.&lt;yy&gt;.&lt;zz&gt;</em>​. TDCT really ought to be moved out of
+the extensions directory, as it has no dependency on the version of
+EPICS under which it is installed (it has no dependency on EPICS at
+all).</p>
+<p>TDCT comes in two packages:</p>
+<ul class="simple">
+<li><strong>tdct_dist</strong>​: Contains the JAR files and help files for the TDCT
+Java application. Generally when TDCT is upgraded, only the tdct_dist
+package is updated.</li>
+<li><strong>tdct_support</strong>​: Contains the schematic symbol files and the
+edb.def file.</li>
+</ul>
+<p>Every time a new version of TDCT is available, we first duplicate the
+current directory structure, then unzip the new <strong>tdct_dist</strong>​ ​
+package inside it to overwrite the previous distribution.</p>
+<p>The files in the ​<strong>tdct_support</strong>​ package have been customized for
+our use at Gemini, so we must keep what we had before and not reinstall
+the original support package.</p>
+<p>Both ​<strong>tdct_dist</strong> ​and​ <strong>tdct_support</strong> ​should be managed as
+vendor modules following the proposal for external modules. TDCT should
+be installed in ​<em>[</em>​<strong>to be defined</strong>​<em>]</em>​ in the ADE tree.</p>
+</div>
+<div class="section" id="procserv">
+<h2>procServ<a class="headerlink" href="#procserv" title="Permalink to this headline">¶</a></h2>
+<p><strong>procServ</strong>​ should be managed as a vendor modules following the
+proposal for external modules. It should be installed in ​<em>[</em>​<strong>to
+be defined</strong>​<em>]</em>​ in the ADE tree.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Gemini Controls
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

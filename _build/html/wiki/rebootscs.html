@@ -1,0 +1,326 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Reboot SCS &mdash; Gemini Documentation 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Other Tests" href="../other/other-index.html" />
+    <link rel="prev" title="Software Coordinator Roles" href="crwikitest.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Gemini Documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Community Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://epics-controls.org">EPICS Website</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://docs.epics-controls.org">EPICS Documentation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Quick Start Guide:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../quick-start/quick-start.html">Quick Start Guide</a></li>
+</ul>
+<p class="caption"><span class="caption-text">PDFs:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pdfs/pdfs-index.html">PDF Tests</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Wiki Docs:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="wiki-index.html">Wiki Tests</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="crwikitest.html">Coordinator Roles</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Reboot SCS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#views">Views</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#personal-tools">Personal tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#navigation">Navigation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#search">Search</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#toolbox">Toolbox</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Other Docs:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../other/other-index.html">Other Tests</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Code:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../code/code-index.html">Code Tests</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Gemini HowTo's:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../howtos/RTEMSInstall.html">Installing RTEMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../howtos/EPICSInstall.html">Installing EPICS Base on the ADE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../howtos/ADEInstall.html">Installing ADE Build Tools</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Gemini Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="wiki-index.html">Wiki Tests</a> &raquo;</li>
+        
+      <li>Reboot SCS</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/wiki/rebootscs.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="reboot-scs">
+<h1>Reboot SCS<a class="headerlink" href="#reboot-scs" title="Permalink to this headline">¶</a></h1>
+<p>From SWG</p>
+<p>Jump to: <a class="reference external" href="#column-one">navigation</a>, <a class="reference external" href="#searchInput">search</a></p>
+<ul class="simple">
+<li>Flatten the mirror. On SCS DM screen Master-&gt;System Status. Beam A,
+XYZ till should be close to the same values. To flatten, go to the
+Master-&gt;Move page and set all values to zero. The two numbers at the
+bottom (XY position) should have the values in the, Positioner “TCS
+coords” on the System Status page (upper rightish) copied over.</li>
+<li>Mirror control and Vibration Loop should be, “OFF”. Turn these off on
+Master-&gt;Control(Primitive Commands) DM page. Use VEND and MEND to
+turn off).</li>
+<li>After the reboot, be sure the followers all go white (around -8000,
+somewhere).</li>
+<li>As a courtesy for whoever uses the telescope after you, put the
+baffles back to where they were before you reboot.</li>
+<li>You can use dbpf m2:iocStats:SysReset 1 to reboot from the command
+line.</li>
+</ul>
+<p><a class="reference external" href="/index.php/File:SCS_Move.png"><img alt="SCS Move.png" src="wiki/media/rId25.png" style="width: 5.83333in; height: 6.11209in;" /></a></p>
+<p><a class="reference external" href="/index.php/File:SCS_Primitive.png"><img alt="SCS Primitive.png" src="wiki/media/rId27.png" style="width: 5.83333in; height: 3.54976in;" /></a></p>
+<p><a class="reference external" href="/index.php/File:SCS_Status.png"><img alt="SCS Status.png" src="wiki/media/rId29.png" style="width: 5.83333in; height: 5.05731in;" /></a></p>
+<p>Retrieved from
+“<a class="reference external" href="http://swg.wikis-internal.gemini.edu/index.php?title=Reboot_SCS&amp;oldid=20024">http://swg.wikis-internal.gemini.edu/index.php?title=Reboot_SCS&amp;oldid=20024</a>”</p>
+<div class="section" id="views">
+<h2>Views<a class="headerlink" href="#views" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="/index.php/Reboot_SCS">Page</a></li>
+<li><a class="reference external" href="/index.php?title=Talk:Reboot_SCS&amp;action=edit&amp;redlink=1">Discussion</a></li>
+<li><a class="reference external" href="/index.php?title=Reboot_SCS&amp;action=edit">Edit</a></li>
+<li><a class="reference external" href="/index.php?title=Reboot_SCS&amp;action=history">History</a></li>
+</ul>
+</div>
+<div class="section" id="personal-tools">
+<h2>Personal tools<a class="headerlink" href="#personal-tools" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="/index.php?title=Special:UserLogin&amp;returnto=Reboot+SCS">Log in / create
+account</a></li>
+</ul>
+</div>
+<div class="section" id="navigation">
+<h2>Navigation<a class="headerlink" href="#navigation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="/index.php/Main_Page">Main page</a></li>
+<li><a class="reference external" href="/index.php/SWG:Community_portal">Community portal</a></li>
+<li><a class="reference external" href="/index.php/SWG:Current_events">Current events</a></li>
+<li><a class="reference external" href="/index.php/Special:RecentChanges">Recent changes</a></li>
+<li><a class="reference external" href="/index.php/Special:Random">Random page</a></li>
+<li><a class="reference external" href="/index.php/Help:Contents">Help</a></li>
+</ul>
+</div>
+<div class="section" id="search">
+<h2>Search<a class="headerlink" href="#search" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="toolbox">
+<h2>Toolbox<a class="headerlink" href="#toolbox" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="/index.php/Special:WhatLinksHere/Reboot_SCS">What links here</a></li>
+<li><a class="reference external" href="/index.php/Special:RecentChangesLinked/Reboot_SCS">Related
+changes</a></li>
+<li><a class="reference external" href="/index.php/Special:SpecialPages">Special pages</a></li>
+<li><a class="reference external" href="/index.php?title=Reboot_SCS&amp;printable=yes">Printable version</a></li>
+<li><a class="reference external" href="/index.php?title=Reboot_SCS&amp;oldid=20024">Permanent link</a></li>
+</ul>
+<p><a class="reference external" href="//www.mediawiki.org/"><img alt="Powered by MediaWiki" src="wiki/media/rId81.png" style="width: 0.91667in; height: 0.32292in;" /></a></p>
+<ul class="simple">
+<li>This page was last modified on 5 March 2020, at 09:54.</li>
+<li>This page has been accessed 50 times.</li>
+<li><a class="reference external" href="/index.php/SWG:Privacy_policy">Privacy policy</a></li>
+<li><a class="reference external" href="/index.php/SWG:About">About SWG</a></li>
+<li><a class="reference external" href="/index.php/SWG:General_disclaimer">Disclaimers</a></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../other/other-index.html" class="btn btn-neutral float-right" title="Other Tests" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="crwikitest.html" class="btn btn-neutral float-left" title="Software Coordinator Roles" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Gemini Controls
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
